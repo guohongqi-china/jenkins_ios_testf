@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ToastTextAction">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="173"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EQ-4r-VtA">
+                    <rect key="frame" x="0.0" y="117.5" width="289" height="0.5"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.47450980392156861" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="ACe-4s-1v2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOE-Fl-fHm">
+                    <rect key="frame" x="142" y="118" width="0.5" height="55"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.47450980392156861" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="ZHY-Bp-wdJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kAr-vt-q0f">
+                    <rect key="frame" x="0.0" y="0.0" width="289" height="117.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is time to Maintain your vehicle (***787). Please book an appointment for your car service" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euO-kR-YpI">
+                            <rect key="frame" x="20" y="34.5" width="249" height="49"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="euO-kR-YpI" firstAttribute="leading" secondItem="kAr-vt-q0f" secondAttribute="leading" constant="20" id="4f4-9b-p9i"/>
+                        <constraint firstItem="euO-kR-YpI" firstAttribute="centerX" secondItem="kAr-vt-q0f" secondAttribute="centerX" id="6Dq-eb-gAy"/>
+                        <constraint firstAttribute="trailing" secondItem="euO-kR-YpI" secondAttribute="trailing" constant="20" id="FgO-nH-Z2n"/>
+                        <constraint firstItem="euO-kR-YpI" firstAttribute="centerY" secondItem="kAr-vt-q0f" secondAttribute="centerY" id="cDJ-yT-gCl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhP-Z4-Olk">
+                    <rect key="frame" x="0.0" y="118" width="142" height="55"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="QkI-k2-Edi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <state key="normal" title="Service Complete">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="8mq-4V-ouV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jp4-ta-Wf7">
+                    <rect key="frame" x="147" y="118" width="142" height="55"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <state key="normal" title="No">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="YWQ-LJ-d1x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="dOE-Fl-fHm" firstAttribute="top" secondItem="5EQ-4r-VtA" secondAttribute="bottom" id="0zT-2o-MUk"/>
+                <constraint firstItem="FhP-Z4-Olk" firstAttribute="top" secondItem="5EQ-4r-VtA" secondAttribute="bottom" id="2op-Sp-w03"/>
+                <constraint firstItem="FhP-Z4-Olk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6pV-NY-X9u"/>
+                <constraint firstItem="5EQ-4r-VtA" firstAttribute="top" secondItem="kAr-vt-q0f" secondAttribute="bottom" id="9ZX-0O-ZA6"/>
+                <constraint firstItem="FhP-Z4-Olk" firstAttribute="width" secondItem="jp4-ta-Wf7" secondAttribute="width" id="BF5-hf-16s"/>
+                <constraint firstAttribute="trailing" secondItem="5EQ-4r-VtA" secondAttribute="trailing" id="EKq-2x-UA0"/>
+                <constraint firstItem="kAr-vt-q0f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GmR-hO-4ip"/>
+                <constraint firstItem="dOE-Fl-fHm" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="H5i-kh-lNM"/>
+                <constraint firstAttribute="trailing" secondItem="jp4-ta-Wf7" secondAttribute="trailing" id="SGo-Hn-mxf"/>
+                <constraint firstItem="FhP-Z4-Olk" firstAttribute="height" secondItem="jp4-ta-Wf7" secondAttribute="height" id="Uzm-td-ZxS"/>
+                <constraint firstItem="jp4-ta-Wf7" firstAttribute="leading" secondItem="FhP-Z4-Olk" secondAttribute="trailing" constant="5" id="Zm9-Bs-f6W"/>
+                <constraint firstItem="jp4-ta-Wf7" firstAttribute="bottom" secondItem="FhP-Z4-Olk" secondAttribute="bottom" id="hpO-2b-H43"/>
+                <constraint firstItem="dOE-Fl-fHm" firstAttribute="leading" secondItem="FhP-Z4-Olk" secondAttribute="trailing" id="rMN-bc-9mY"/>
+                <constraint firstItem="5EQ-4r-VtA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sqq-Kf-nEg"/>
+                <constraint firstAttribute="trailing" secondItem="kAr-vt-q0f" secondAttribute="trailing" id="ukT-cA-Df8"/>
+                <constraint firstAttribute="bottom" secondItem="FhP-Z4-Olk" secondAttribute="bottom" id="v23-tx-Mlw"/>
+                <constraint firstItem="kAr-vt-q0f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vwT-OC-Q1j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLab" destination="euO-kR-YpI" id="Hxg-9W-lo6"/>
+                <outlet property="hLine" destination="5EQ-4r-VtA" id="Wnd-no-XaP"/>
+                <outlet property="leftBtn" destination="FhP-Z4-Olk" id="5hA-eC-dQm"/>
+                <outlet property="rightBtn" destination="jp4-ta-Wf7" id="FNY-0u-CEU"/>
+                <outlet property="vLine" destination="dOE-Fl-fHm" id="h4w-P5-r28"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="273.91304347826087"/>
+        </view>
+    </objects>
+</document>

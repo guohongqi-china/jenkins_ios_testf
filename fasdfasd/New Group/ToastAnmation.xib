@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MG-Bold.ttf">
+            <string>MG-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5vW-C3-Rfa" customClass="ToastAnmation">
+            <rect key="frame" x="0.0" y="0.0" width="288.5" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Pin Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R07-KW-jdT">
+                    <rect key="frame" x="83.5" y="30" width="122" height="17"/>
+                    <fontDescription key="fontDescription" name="MG-Bold" family="MG" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Progress" translatesAutoresizingMaskIntoConstraints="NO" id="7Vg-7p-tyK">
+                    <rect key="frame" x="120" y="71" width="49" height="46"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R07-KW-jdT" firstAttribute="top" secondItem="5vW-C3-Rfa" secondAttribute="top" constant="30" id="3UQ-QY-IcX"/>
+                <constraint firstItem="R07-KW-jdT" firstAttribute="centerX" secondItem="5vW-C3-Rfa" secondAttribute="centerX" id="Acn-n9-ghI"/>
+                <constraint firstItem="7Vg-7p-tyK" firstAttribute="centerX" secondItem="5vW-C3-Rfa" secondAttribute="centerX" id="Z2y-so-YLe"/>
+                <constraint firstItem="7Vg-7p-tyK" firstAttribute="centerY" secondItem="5vW-C3-Rfa" secondAttribute="centerY" multiplier="1:0.92" id="cDi-iN-gtL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animationV" destination="7Vg-7p-tyK" id="efO-W9-s0l"/>
+                <outlet property="titleLab" destination="R07-KW-jdT" id="1hR-en-yQX"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Progress" width="49" height="46"/>
+    </resources>
+</document>
